@@ -5,7 +5,7 @@ import ParticlesBackground from './components/ParticlesBackground.vue'
 
 const isTyping = ref(false)
 const text = ref('')
-const fullText = '欢迎来到我的个人网站！'
+const fullText = '欢迎来到琦总的个人网站！'
 
 onMounted(() => {
   isTyping.value = true
@@ -163,8 +163,15 @@ nav {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
